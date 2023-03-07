@@ -1,3 +1,97 @@
+:root {
+    --genoa: #F3F3F3;
+}
+
 body{
     background-color: darkgray;
 }
+/* Вимикаєм маркери в списках */
+.unmarked {
+    list-style: none;
+}
+
+.invisible{
+}
+
+/* ===== HERO ===== */
+.hero {}
+
+.container {
+    max-width: 1150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 448px;
+}
+
+.hero .title {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.22;
+    color: var(--genoa);
+}
+.hero-main > .text {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.22;
+    color: var(--genoa);
+}
+
+.red-bold {
+    font-weight: 900;
+    color: rgba(188, 26, 26, 0.71);
+}
+
+.hero-main > .btn {
+    padding: 20px 84px;
+}
+
+.advantages {
+    display: flex;
+    /* margin-left: 0; */
+    padding-left: 0;
+}
+
+.advantages .item {
+    display: flex;
+    align-items: center;
+}
+
+.advantages .count {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.22;
+    color: var(--genoa);
+}
+.advantages .text{
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--genoa);
+}
+
+.hero-img {
+    width: 432px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+
+    /* background-color: blue; */
+}
+
+.hero-img .image:last-child{
+    margin-left: -170px;
+    z-index: -1;
+}
+
+.socials {}

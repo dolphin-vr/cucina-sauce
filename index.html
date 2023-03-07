@@ -1,128 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUCINA</title>
-    <link rel="shortcut icon" href="./images/tomato2.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <a href="./index.html"><img src="./images/logo.svg" alt="logo">Cucina</a>
-        <nav>
-           <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Store</a></li>
-              <li><a href="">Recipes</a></li>
-              <li><a href="">Gallery</a></li>
-           </ul>
-        </nav>
-        <a href="#footer">Contact us</a>
-     </header>
-  
-     <main>
-        <section class="hero">
-            <h1>CUCINA DI CATHERINA</h1>
-            <p>We know,<br> you will love our product</p>
-            <button type="button" class="btn">Buy now</button>
+   <head>
+      <meta charset="UTF-8" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <title>CUCINA</title>
+      <link rel="shortcut icon" href="./images/tomato2.png" type="image/x-icon" >
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet" >
+      <link rel="stylesheet" href="./css/style.css" >
+   </head>
+
+   <body>
+      <header>
+         <a href="./index.html"><img src="./images/logo.svg" alt="logo" >Cucina</a>
+         <nav>
             <ul>
-                <li>
-                    <p>14</p>
-                    <p>different tastes</p>
-                </li>
-                <li>
-                    <p>31</p>
-                    <p>factories around<br>the world</p>
-                </li>
+               <li><a href="">Home</a></li>
+               <li><a href="">Store</a></li>
+               <li><a href="">Recipes</a></li>
+               <li><a href="">Gallery</a></li>
             </ul>
-            <img src="./images/ketchup.svg" alt="">
-            <img src="./images/ketchup.png" alt="ketchup">
-            <ul>
-                <li><a href=""><img src="./images/ico-tg.svg" alt="telegram"></a></li>
-                <li><a href=""><img src="./images/ico-ig.svg" alt="instagram"></a></li>
-                <li><a href=""><img src="./images/ico-yt.svg" alt="youtube"></a></li>
-                <li><a href=""><img src="./images/ico-tw.svg" alt="twitter"></a></li>
-            </ul>
-        </section>
-        
-        <section class="vertical-slider">
+         </nav>
+         <a href="#footer">Contact us</a>
+      </header>
+
+      <main>
+         <section class="hero">
+            <div class="container">
+               <div class="hero-main">
+                  <h1 class="title">CUCINA DI CATHERINA</h1>
+                  <p class="text">
+                     We know,<br >
+                     you will <span class="red-bold">love</span> our product
+                  </p>
+                  <button class="btn" type="button">1</button>
+                  <ul class="advantages unmarked">
+                     <li class="item">
+                        <span class="count">14</span>
+                        <span class="text">different tastes</span>
+                     </li>
+                     <li class="item">
+                        <span class="count">31</span>
+                        <span class="text">factories around<br >the world</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="hero-img">
+                  <img class="image" src="./images/ketchup.svg" alt="" >
+                  <img class="image" src="./images/ketchup.png" alt="ketchup" >
+               </div>
+               <ul class="socials unmarked">
+                  <li class="item">
+                     <a href=""><img src="./images/ico-tg.svg" alt="telegram" ></a>
+                  </li>
+                  <li class="item">
+                     <a href=""><img src="./images/ico-ig.svg" alt="instagram" ></a>
+                  </li>
+                  <li class="item">
+                     <a href=""><img src="./images/ico-yt.svg" alt="youtube" ></a>
+                  </li>
+                  <li class="item">
+                     <a href=""><img src="./images/ico-tw.svg" alt="twitter" ></a>
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <section class="vertical-slider">
             <h2 class="invisible">best sales products</h2>
             <!-- Previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)"><img src="./images/slide-up.svg" alt="slide up"></a>
-            
+            <a class="prev" onclick="plusSlides(-1)"><img src="./images/slide-up.svg" alt="slide up" ></a>
+
             <ul class="slider-frame unmarked">
-                <li class="slider-item">
-                    <ul class="product-img unmarked">
-                        <li class="slideOdd fade"><img src="./images/vslide11.png" alt="Classic sauce"></li>
-                        <li class="slideOdd fade"><img src="./images/vslide21.png" alt="Classic sauce"></li>
-                        <li class="slideOdd fade"><img src="./images/vslide31.png" alt="Classic sauce"></li>                    
-                    </ul>
-                    <div class="product-review">
-                        <h3 class="slider-title">Classic sauce</h3>
-                        <p class="slider-text">The most delicate taste of tomatoes, combined with branded spices and white wine, will make your dish incredibly tasty.</p>
-                        <button type="button" class="slider-btn">Buy now</button>
-                    </div>
-                </li>
-                <li class="slider-item">
-                    <ul class="product-img unmarked">
-                        <li class="slideEven fade"><img src="./images/vslide12.png" alt="Spicy sauce"></li>
-                        <li class="slideEven fade"><img src="./images/vslide22.png" alt="Spicy sauce"></li>
-                        <li class="slideEven fade"><img src="./images/vslide32.png" alt="Spicy sauce"></li>                    
-                    </ul>
-                    <div class="product-review">
-                        <h3 class="slider-title">Spicy sauce</h3>
-                        <p class="slider-text">For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and aromas of the sauce well.</p>
-                        <button type="button" class="slider-btn">Buy now</button>
-                    </div>
-                </li>
+               <li class="slider-item">
+                  <ul class="product-img unmarked">
+                     <li class="slideOdd fade"><img src="./images/vslide11.png" alt="Classic sauce" ></li>
+                     <li class="slideOdd fade"><img src="./images/vslide21.png" alt="Classic sauce" ></li>
+                     <li class="slideOdd fade"><img src="./images/vslide31.png" alt="Classic sauce" ></li>
+                  </ul>
+                  <div class="product-review">
+                     <h3 class="slider-title">Classic sauce</h3>
+                     <p class="slider-text">
+                        The most delicate taste of tomatoes, combined with branded spices and white wine, will make your
+                        dish incredibly tasty.
+                     </p>
+                     <button type="button" class="slider-btn">Buy now</button>
+                  </div>
+               </li>
+               <li class="slider-item">
+                  <ul class="product-img unmarked">
+                     <li class="slideEven fade"><img src="./images/vslide12.png" alt="Spicy sauce" ></li>
+                     <li class="slideEven fade"><img src="./images/vslide22.png" alt="Spicy sauce" ></li>
+                     <li class="slideEven fade"><img src="./images/vslide32.png" alt="Spicy sauce" ></li>
+                  </ul>
+                  <div class="product-review">
+                     <h3 class="slider-title">Spicy sauce</h3>
+                     <p class="slider-text">
+                        For thrill-seekers, we added hot chili pepper to our sauce, it also reveals all the tastes and
+                        aromas of the sauce well.
+                     </p>
+                     <button type="button" class="slider-btn">Buy now</button>
+                  </div>
+               </li>
             </ul>
             <!-- Next buttons -->
-            <a class="next" onclick="plusSlides(1)"><img src="./images/slide-down.svg" alt="slide down"></a>
-        </section>
+            <a class="next" onclick="plusSlides(1)"><img src="./images/slide-down.svg" alt="slide down" ></a>
+         </section>
 
-        <section class="videos">
+         <section class="videos">
             <h2>videos</h2>
             <ul>
                <li>
-                  <video controls src="https://youtu.be/uvZ1Ra8ONgo" preload="metadata"
-                     poster="./images/bellpepperpasta.jpg" width="442"></video>
+                  <video
+                     controls
+                     src="https://youtu.be/uvZ1Ra8ONgo"
+                     preload="metadata"
+                     poster="./images/bellpepperpasta.jpg"
+                     width="442"></video>
                   <p>Bell pepper pasta</p>
                </li>
                <li>
-                  <video controls src="https://youtu.be/OqEab89YWQ4" preload="metadata"
-                     poster="./images/tomatopasta.jpg" width="442"></video>
+                  <video
+                     controls
+                     src="https://youtu.be/OqEab89YWQ4"
+                     preload="metadata"
+                     poster="./images/tomatopasta.jpg"
+                     width="442"></video>
                   <p>Tomato paste</p>
                </li>
             </ul>
          </section>
-   
+
          <section class="horizontal-slider">
             <h2>slideshow</h2>
             <!-- Previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)"><img src="./images/slide-left.svg" alt="slide left"></a>
+            <a class="prev" onclick="plusSlides(-1)"><img src="./images/slide-left.svg" alt="slide left" ></a>
             <ul>
-                <li><img src="./images/hslide1.jpg" alt="slide 1"></li>
-                <li><img src="./images/hslide2.jpg" alt="slide 2"></li>
-                <li><img src="./images/hslide3.jpg" alt="slide 3"></li>
+               <li><img src="./images/hslide1.jpg" alt="slide 1" ></li>
+               <li><img src="./images/hslide2.jpg" alt="slide 2" ></li>
+               <li><img src="./images/hslide3.jpg" alt="slide 3" ></li>
             </ul>
             <!-- Next buttons -->
-            <a class="next" onclick="plusSlides(1)"><img src="./images/slide-right.svg" alt="slide down"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="./images/slide-right.svg" alt="slide down" ></a>
             <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+            <div style="text-align: center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
             </div>
          </section>
       </main>
-   
+
       <footer></footer>
 
-    <script src="./scripts/slider.js"></script>
-</body>
+      <script src="./scripts/slider.js"></script>
+   </body>
 </html>
