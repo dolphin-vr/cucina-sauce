@@ -2,45 +2,153 @@
     --genoa: #F3F3F3;
 }
 
-body{
-    background-color: darkgray;
-}
-/* Вимикаєм маркери в списках */
-.unmarked {
-    list-style: none;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.invisible{
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--genoa);
+    background-image: url(../images/bgr_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: #100F0F; */
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.invisible {
+    visibility: collapse;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    font-family: inherit;
+    color: inherit;
+    background-color: rgba(188, 26, 26, 0.2);
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgba(188, 26, 26, 0.5);
+}
+
+.container {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ===== HEADER ===== */
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: inherit;
+    fill: var(--genoa);
+}
+.logo:hover{
+    color: rgba(188, 26, 26, 0.5);
+    fill: rgba(188, 26, 26, 0.5);
+}
+
+.logo>svg {
+    margin-right: 16px;
+}
+
+.menu .link {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: inherit;
+    padding: 30px 0;
+}
+
+.menu .link:hover {
+    color: rgba(188, 26, 26, 0.5);
+}
+
+.menu .item {}
+
+.menu .item:not(last-child) {
+    margin-right: 52px;
+}
+
+.button.link {
+    display: block;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.25;
+    color: inherit;
+    padding: 10px 34px;
+    border: 1px solid #F3F3F3;
+    border-radius: 16px;
+}
+
+.button.link:hover {
+    color: rgba(188, 26, 26, 0.5);
+    border-color: rgba(188, 26, 26, 0.5);
 }
 
 /* ===== HERO ===== */
 .hero {}
 
-.container {
-    max-width: 1150px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .hero .container {
     display: flex;
     align-items: center;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .hero-main {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     max-width: 448px;
 }
 
 .hero .title {
-    margin: 0 auto;
+    margin: 0 auto 24px;
+    /* margin-bottom: 24px; */
     font-weight: 500;
     font-size: 64px;
     line-height: 1.22;
     color: var(--genoa);
 }
-.hero-main > .text {
+
+.hero-main>.text {
+    margin: 0 auto 48px 0;
     font-weight: 300;
     font-size: 36px;
     line-height: 1.22;
@@ -52,8 +160,13 @@ body{
     color: rgba(188, 26, 26, 0.71);
 }
 
-.hero-main > .btn {
+.hero-main>.btn {
+    margin: 0 auto 48px 0;
     padding: 20px 84px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.23;
+    border-radius: 16px;
 }
 
 .advantages {
@@ -65,15 +178,24 @@ body{
 .advantages .item {
     display: flex;
     align-items: center;
+    height: 78px;
+}
+
+.advantages .item:nth-child(n+2) {
+    margin-left: 14px;
+    padding-left: 12px;
+    border-left: 1px solid #F3F3F3;
 }
 
 .advantages .count {
+    margin-right: 12px;
     font-weight: 600;
     font-size: 32px;
     line-height: 1.22;
     color: var(--genoa);
 }
-.advantages .text{
+
+.advantages .text {
     font-size: 16px;
     line-height: 1.25;
     color: var(--genoa);
@@ -82,16 +204,271 @@ body{
 .hero-img {
     width: 432px;
     display: flex;
-    /* flex-direction: row-reverse; */
-    /* justify-content: flex-end; */
     align-items: flex-end;
-
-    /* background-color: blue; */
+    margin-left: auto;
+    margin-right: 48px;
 }
 
-.hero-img .image:last-child{
+.hero-img .image:last-child {
     margin-left: -170px;
     z-index: -1;
 }
 
-.socials {}
+.socials  .link{
+    fill: var(--genoa);
+}
+.socials .link:hover {
+    fill: rgba(188, 26, 26, 0.5);
+}
+
+.socials .item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+/* ===== VERT SLIDER ===== */
+.vertical-slider .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-slider h2,
+.videos h2,
+.horizontal-slider h2 {
+    margin: 0;
+    height: 100px;
+}
+
+.slider-frame {
+    width: 920px;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-frame .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.slider-frame .item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.product-img {
+    width: 400px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.product-review {
+    margin: 75px auto auto;
+    width: 406px;
+}
+
+.slider-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.22;
+    margin: 0;
+}
+
+.slider-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin: 16px 0 20px;
+}
+
+.slider-btn {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 1.2;
+    color: inherit;
+    background-color: rgba(188, 26, 26, 0.2);
+    padding: 10px 58px;
+    border-radius: 8px;
+}
+
+/* Hide the images by default */
+.slideOdd,
+.slideEven {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    fill: var(--genoa);
+}
+
+/* On hover, add a background color with a little bit see-through */
+.prev:hover,
+.next:hover,
+.prev:focus,
+.next:focus,
+{
+background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ===== VIDEOS ===== */
+.videos .list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 12px 94px;
+}
+
+.videos .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.videos .title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.22;
+    color: var(--genoa);
+}
+
+/* ===== HORIZ SLIDER ===== */
+.horizontal-slider .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-slider .slider {
+    display: flex;
+    align-items: center;
+}
+
+.doter{
+    padding: 8px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #6F6666;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #7f7f7f;
+    border: 3px solid #F3F3F3;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    margin-top: 100px;
+    border-top: 1px solid #F3F3F3;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 35px;
+}
+
+.footer .logo {
+    margin-right: 156px;
+}
+
+.footer .menu {
+    display: flex;
+    flex-direction: column;
+    margin-right: 170px;
+}
+
+/* .footer .menu {} */
+
+.footer .menu .item{
+    margin-right: 0;
+}
+
+.footer .menu .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer .menu .link {
+    padding: 0;
+    font-family:'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.footer .address{
+    margin-right: 218px;
+    height: 88px;
+}
+
+.footer .address .item:not(:last-child) {
+    margin-bottom: 40px; 
+}
+
+.address .link {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.19;
+    color: inherit;
+    fill: var(--genoa);
+}
+
+.address svg {
+    margin-right: 8px;
+}
+
+.address .link:hover {
+    color: rgba(188, 26, 26, 0.5);
+    fill: rgba(188, 26, 26, 0.5);
+}
+
+.footer .socials{}
+
+.footer .socials .item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #979797;
+}
+
+.copyright a{
+    font-weight: 500;
+    color: #FFFFFF;
+}
