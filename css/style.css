@@ -20,7 +20,7 @@ body {
         #100F0F
     ); */
    
-    background-color: #100F0F;
+    background-color: #C9C9C9;
 }
 
 .list {
@@ -59,6 +59,7 @@ button {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #100F0F;
 }
 
 /* ===== HEADER ===== */
@@ -66,6 +67,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(
+       75deg,
+        #100F0F,
+        #6F6666);
 }
 
 .menu {
@@ -128,9 +133,10 @@ button {
 
 /* ===== HERO ===== */
 .hero {
-    background-image: linear-gradient(to top right,
-                #100F0F 70%,
-                #6F6666);
+    /* background-image: linear-gradient(to top right,
+                #100F0F 55%,
+                #6F6666); */
+   
 }
 
 .hero .container {
@@ -138,6 +144,10 @@ button {
     align-items: center;
     padding-top: 72px;
     padding-bottom: 72px;
+     background-image: linear-gradient(
+        210deg,
+        #6F6666 ,
+        #100F0F 45%);
 }
 
 .hero-main {
@@ -218,9 +228,9 @@ button {
     margin-right: 48px;
 }
 
-.hero-img .image:last-child {
-    margin-left: -170px;
-    z-index: -1;
+.hero-img .image:first-child {
+    margin-right: -170px;
+    z-index: 2;
 }
 
 .socials  .link{
@@ -367,6 +377,7 @@ background-color: rgba(255, 255, 255, 0.9);
 .horizontal-slider .container{
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .horizontal-slider .slider {
@@ -395,16 +406,12 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* ===== FOOTER ===== */
-.footer{
-    margin-top: 100px;
-    border-top: 1px solid #F3F3F3;
-}
-
 .footer .container{
     display: flex;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 35px;
+    border-top: 1px solid #F3F3F3;
 }
 
 .footer .logo {
