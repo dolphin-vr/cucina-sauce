@@ -11,11 +11,16 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--genoa);
-    background-image: url(../images/bgr_3.jpg);
+    /* background-image: url(../images/bgr_3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-
-    /* background-color: #100F0F; */
+    background-size: cover; */
+    /* background-image: linear-gradient(
+        to bottom left,
+        #6F6666 1%,
+        #100F0F
+    ); */
+   
+    background-color: #100F0F;
 }
 
 .list {
@@ -122,7 +127,11 @@ button {
 }
 
 /* ===== HERO ===== */
-.hero {}
+.hero {
+    background-image: linear-gradient(to top right,
+                #100F0F 70%,
+                #6F6666);
+}
 
 .hero .container {
     display: flex;
