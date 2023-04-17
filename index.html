@@ -6,22 +6,24 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CUCINA</title>
-   <link rel="shortcut icon" href="./images/tomato2.png" type="image/x-icon">
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap"">
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+      <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-   <header>
+   <header class="header">
       <nav class="page-nav container">
          <a href="./index.html" class="logo link"><svg width="32" height="32"><use href="./images/sprite.svg#logo"></use></svg>Cucina</a>
          <ul class="menu list">
             <li class="item"><a href="" class="link">Home</a></li>
             <li class="item"><a href="" class="link">Store</a></li>
-            <li class="item"><a href="" class="link">Recipes</a></li>
+            <li class="item"><a href="./recipes.html" class="link">Recipes</a></li>
             <li class="item"><a href="" class="link">Gallery</a></li>
          </ul>
          <a href="#footer" class="button link">Contact us</a>
@@ -50,14 +52,14 @@
                </ul>
             </div>
             <div class="hero-img">
-               <img class="image" src="./images/ketchup.svg" alt="">
-               <img class="image" src="./images/ketchup.png" alt="ketchup">
+               <svg class="svg"><use href="./images/sprite.svg#ketchup" width="268" higth="574"></use></svg>
+               <img class="img" src="./images/ketchup.png" alt="ketchup">
             </div>
             <ul class="socials list">
-               <li class="item"><a href="" class="link"><svg width="32" height="32"><use href="./images/sprite.svg#ico-tg"></use></svg></a></li>
-               <li class="item"><a href="" class="link"><svg width="32" height="32"><use href="./images/sprite.svg#ico-ig"></use></svg></a></li>
-               <li class="item"><a href="" class="link"><svg width="32" height="32"><use href="./images/sprite.svg#ico-yt"></use></svg></a></li>
-               <li class="item"><a href="" class="link"><svg width="32" height="32"><use href="./images/sprite.svg#ico-tw"></use></svg></a></li>
+               <li class="item"><a href="" class="link"><svg><use href="./images/sprite.svg#ico-tg"></use></svg></a></li>
+               <li class="item"><a href="" class="link"><svg><use href="./images/sprite.svg#ico-ig"></use></svg></a></li>
+               <li class="item"><a href="" class="link"><svg><use href="./images/sprite.svg#ico-yt"></use></svg></a></li>
+               <li class="item"><a href="" class="link"><svg><use href="./images/sprite.svg#ico-tw"></use></svg></a></li>
             </ul>
          </div>
       </section>
